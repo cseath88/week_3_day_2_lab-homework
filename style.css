@@ -55,7 +55,7 @@ nav ul {
 nav> ul> li{
   color: #fff;
   font-size: 1rem;
-list-style-type: none;
+  list-style-type: none;
   margin-right: 1rem;
 
 }
@@ -108,7 +108,7 @@ nav>ul>li>a:hover{
 
 input {
   /* Style the form input elements using width, height, padding-left and border-radius */
-  width: 300px;
+  width: 350px;
   height: 3rem;
   padding-left: 15px;
   border-radius: 5px;
@@ -155,7 +155,7 @@ input {
   /* The destinations are enclosed in an article element that we want to make a grid */
   /* Set the display property to 'grid' and justify the content */
   display: grid;
-  grid-template-columns: auto auto auto;
+  justify-content: center;
  
 }
 
@@ -164,14 +164,15 @@ input {
   /* Use the grid-template-columns property to set each column to 30% */
   /* You can experiment with different units for the width values */
   /* Hint: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
-  grid-template-columns: 3fr 3fr 3fr;
-  
+  grid-template-columns: repeat(3, 30%);
+  display: grid;
 }
 
 .section-title {
   /* The <div> with class section-title contains an <h3> child which we want to center */
   /* The easiest way to center child elements is to set the display property to 'flex' and justify the content */
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .single-destination {
@@ -179,29 +180,45 @@ input {
   /* Set the overflow to 'hidden' */
   /* The overflow CSS shorthand property sets the desired behaviour for an element's overflow 
     — i.e. when an element's content is too big to fit. In this case, the image is too big too fit. */
-  
+  margin: 1px;
+  overflow: hidden;
+  j
+
 }
 
 img {
   /* Set the max-width property to 100% */
+  max-width: 100%;
 }
 
 /* Let's take the training wheels off. Finish off the page by adding styles to the remaining blocks */
 
 .testimonial-area {
   /* Write your code here */
+  background-color: rgb(31, 55, 82);
+  
 }
 
 .single-testmonial{
   /* Write your code here */
+  background-color: #d1e1ec;
+  gap: 1rem;
+  border-radius: 5px;
 }
 
 .footer {
   /* Write your code here */
+  background-color: #131c30;
+  display: flex;
+  color: white;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-widget p {
   /* Write your code here */
+  
 }
 
 .footer-widget a:hover {
@@ -210,6 +227,7 @@ img {
 
 .footer-widget ul li {
   /* Write your code here */
+  list-style-type: none;
 }
 
 .footer-widget a {
